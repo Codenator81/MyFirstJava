@@ -1,5 +1,6 @@
 /**
  * Created by Codenator on 04-Apr-14.
+ * Урок массивы и их применение
  */
 public class Arrays {
     public static void main(String[] args)
