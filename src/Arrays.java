@@ -23,11 +23,28 @@ public class Arrays {
         }
         int average = 0;
         for(double value : цифорки) {
-            System.out.println(value);
+         //   System.out.println(value);
             average += value;
         }
         average /= цифорки.length;
-        System.out.println(average);
+   //     System.out.println(average);
 
+        // multidimensinoal array
+        long[][][] beans = new long[3][][];
+        beans[0] = new long[4][]; // produce beans[0][] 4 ячейки во втором скторе
+        beans[1] = new long[2][]; // produce beans[0][] 2 ячейки во втором скторе
+        beans[2] = new long[5][]; // produce beans[0][] 5 ячейки во втором скторе
+
+        // initialize randon arrays
+        for(int i = 0; i < beans.length; ++i) // Vary over 1st dimension
+            for(int j = 0; j < beans[i].length; ++j) // Vary over 2nd dimension
+                beans[i][j] = new long[(int)(1.0 + 6.0*Math.random())];
+
+        char[] sign = {'Е', 'х', 'а', 'л', ' ', 'Г', 'р', 'е', 'к', 'а', ' ','ч', 'е', 'р', 'е', 'з' , ' ','р', 'е', 'к', 'у',  '\n',
+                'в', 'и', 'д', 'и', 'т', ' ', 'Г', 'р', 'е', 'к', 'а', ' ','в', ' ', 'р', 'е', 'к', 'е', ' ', 'р', 'а', 'к', '\n'
+        };
+        for(char value: sign){
+            System.out.print(value);
+        }
     }
 }
