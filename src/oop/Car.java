@@ -3,13 +3,14 @@ package oop;
 /**
  * Created by Codenator on 06-Apr-14.
  */
-public class Car {
-    int idi;
+public class Car extends Super {
+
     String name;
     public static void main(String args[]){
-        Car honda = new Car();
-        honda.name = "Honda";
-        System.out.println(honda.name);
+        Car c = new Car();
+        c.name = "Honda";
+        c.idi = 2;
+        System.out.println(c.name);
     }
 
 }
